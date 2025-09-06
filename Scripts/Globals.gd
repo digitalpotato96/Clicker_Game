@@ -1,7 +1,7 @@
 extends Node
 
 var cash :int = 0
-var CPS :int = 20
+var CPS :int = 1
 
 #scenes
 
