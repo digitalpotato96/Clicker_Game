@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://sakke0ypvcnn"]
+
+[ext_resource type="PackedScene" uid="uid://byykwmrxmygbn" path="res://Scenes/main_menu.tscn" id="1_gsigp"]
+[ext_resource type="Script" uid="uid://bqwi53qonoamr" path="res://Scripts/main_game_logic.gd" id="1_redof"]
+
+[node name="Main game root" type="Node"]
+script = ExtResource("1_redof")
+
+[node name="Main menu" parent="." instance=ExtResource("1_gsigp")]

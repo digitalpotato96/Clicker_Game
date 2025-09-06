@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwl5rqw6jhicr"]
+
+[ext_resource type="Script" uid="uid://pmofxmqdd121" path="res://Scripts/MainUI.gd" id="1_1b2bo"]
+[ext_resource type="Texture2D" uid="uid://bblxwa3dj8uoc" path="res://Assets/piggy.png" id="2_v2k75"]
+[ext_resource type="Texture2D" uid="uid://cfvbx5510oq1o" path="res://Assets/dollar.png" id="3_wk3fd"]
+[ext_resource type="Texture2D" uid="uid://cfovc2jo6at3l" path="res://Assets/setting placeholder.png" id="4_w0gnm"]
+
+[node name="Main ui" type="CanvasLayer"]
+script = ExtResource("1_1b2bo")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.0
+offset_top = -49.0
+offset_right = 927.0
+offset_bottom = 931.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.11, 0.11)
+texture_normal = ExtResource("2_v2k75")
+stretch_mode = 0
+
+[node name="New_counter" type="PanelContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 37.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="New_counter"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="New_counter/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_wk3fd")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="New_counter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0.243137, 0.643137, 0.27451, 1)
+theme_override_colors/font_selected_color = Color(0.243387, 0.641238, 0.274796, 1)
+theme_override_font_sizes/normal_font_size = 24
+text = "Place holder"
+vertical_alignment = 1
+
+[node name="Cash_effect" type="Node" parent="."]
+
+[node name="pause menu" type="TextureButton" parent="."]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 0.881
+anchor_right = 0.991
+anchor_bottom = 0.131
+offset_left = 0.259979
+offset_top = 66.0
+offset_right = -0.140015
+offset_bottom = 0.23999
+texture_normal = ExtResource("4_w0gnm")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="pause menu" to="." method="_on_pause_menu_pressed"]
