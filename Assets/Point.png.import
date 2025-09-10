@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnvp5k15ac0og"
-path="res://.godot/imported/Spud talk.png-f90b5c2dd79ecf16ef4edcb40b2ef9fd.ctex"
+uid="uid://b52cmpthoeur0"
+path="res://.godot/imported/Point.png-d5529e72cd752baeffd7619bff274c0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Shop/Spud talk.png"
-dest_files=["res://.godot/imported/Spud talk.png-f90b5c2dd79ecf16ef4edcb40b2ef9fd.ctex"]
+source_file="res://Assets/Point.png"
+dest_files=["res://.godot/imported/Point.png-d5529e72cd752baeffd7619bff274c0a.ctex"]
 
 [params]
 

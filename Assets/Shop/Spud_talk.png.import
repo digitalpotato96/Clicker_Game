@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddnkwrxmx0d23"
-path="res://.godot/imported/Spud idle.png-1b93dec3174033e0d785e493b4a225e2.ctex"
+uid="uid://c68k5wxc7dxc2"
+path="res://.godot/imported/Spud_talk.png-be63064a55ab985f53ca3f20765abf8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Shop/Spud idle.png"
-dest_files=["res://.godot/imported/Spud idle.png-1b93dec3174033e0d785e493b4a225e2.ctex"]
+source_file="res://Assets/Shop/Spud_talk.png"
+dest_files=["res://.godot/imported/Spud_talk.png-be63064a55ab985f53ca3f20765abf8b.ctex"]
 
 [params]
 

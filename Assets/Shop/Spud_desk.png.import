@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ch70uk0j840y5"
-path="res://.godot/imported/Spud Desk.png-023a57f1054a4c662682609932ddb051.ctex"
+uid="uid://b1mevotqu5lra"
+path="res://.godot/imported/Spud_desk.png-47495e51a26c9ad8921277ce04d6f449.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Shop/Spud Desk.png"
-dest_files=["res://.godot/imported/Spud Desk.png-023a57f1054a4c662682609932ddb051.ctex"]
+source_file="res://Assets/Shop/Spud_desk.png"
+dest_files=["res://.godot/imported/Spud_desk.png-47495e51a26c9ad8921277ce04d6f449.ctex"]
 
 [params]
 

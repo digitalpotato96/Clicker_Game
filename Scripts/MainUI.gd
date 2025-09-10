@@ -20,3 +20,8 @@ func _on_texture_button_pressed() -> void:
 func _on_pause_menu_pressed() -> void:
 	get_tree().call_deferred("change_scene_to_file", "res://Scenes/main_menu.tscn")
 	pass # Replace with function body.
+
+
+func _on_shop_pressed() -> void:
+	get_tree().call_deferred("change_scene_to_file", "res://Scenes/shop_scene.tscn")
+	pass # Replace with function body.

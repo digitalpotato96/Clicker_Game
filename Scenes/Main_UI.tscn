@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bwl5rqw6jhicr"]
+[gd_scene load_steps=6 format=3 uid="uid://bwl5rqw6jhicr"]
 
 [ext_resource type="Script" uid="uid://pmofxmqdd121" path="res://Scripts/MainUI.gd" id="1_1b2bo"]
 [ext_resource type="Texture2D" uid="uid://bblxwa3dj8uoc" path="res://Assets/piggy.png" id="2_v2k75"]
 [ext_resource type="Texture2D" uid="uid://cfvbx5510oq1o" path="res://Assets/dollar.png" id="3_wk3fd"]
 [ext_resource type="Texture2D" uid="uid://cfovc2jo6at3l" path="res://Assets/setting placeholder.png" id="4_w0gnm"]
+[ext_resource type="Texture2D" uid="uid://b52cmpthoeur0" path="res://Assets/Point.png" id="5_v2k75"]
 
 [node name="Main ui" type="CanvasLayer"]
 script = ExtResource("1_1b2bo")
@@ -63,5 +64,49 @@ texture_normal = ExtResource("4_w0gnm")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="Shop button" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 541.0
+offset_bottom = 961.0
+mouse_filter = 2
+
+[node name="Shop" type="TextureButton" parent="Shop button"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.868519
+anchor_top = 0.463021
+anchor_right = 1.0
+anchor_bottom = 0.536979
+offset_left = -0.86853
+offset_top = -0.463013
+offset_right = -0.86853
+offset_bottom = -0.463013
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("5_v2k75")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Shop button"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.871
+anchor_top = 0.49
+anchor_right = 1.0
+anchor_bottom = 0.53
+offset_left = -0.211029
+offset_top = 24.11
+offset_right = -1.0
+offset_bottom = -0.330017
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 9
+text = "Go to the shop"
+horizontal_alignment = 1
+autowrap_mode = 3
+
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="pause menu" to="." method="_on_pause_menu_pressed"]
+[connection signal="pressed" from="Shop button/Shop" to="." method="_on_shop_pressed"]
