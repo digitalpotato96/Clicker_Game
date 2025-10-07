@@ -1,0 +1,191 @@
+[gd_scene load_steps=12 format=3 uid="uid://nmbpa735v1p8"]
+
+[ext_resource type="Script" uid="uid://cj7mayuvb7ldb" path="res://Scenes/shop_scene.gd" id="1_5ycja"]
+[ext_resource type="Texture2D" uid="uid://b1mevotqu5lra" path="res://Assets/Shop/Spud_desk.png" id="1_njw01"]
+[ext_resource type="Texture2D" uid="uid://bwfpsi7ikwo8d" path="res://Assets/Shop/Spud_Idle.png" id="2_6rmb7"]
+[ext_resource type="Texture2D" uid="uid://c68k5wxc7dxc2" path="res://Assets/Shop/Spud_talk.png" id="3_jwdga"]
+[ext_resource type="Texture2D" uid="uid://cfvbx5510oq1o" path="res://Assets/dollar.png" id="4_jwdga"]
+[ext_resource type="Texture2D" uid="uid://d0knuymwg47rp" path="res://Assets/Shop/plank.png" id="4_nkmxo"]
+[ext_resource type="Texture2D" uid="uid://cfovc2jo6at3l" path="res://Assets/setting placeholder.png" id="5_uxpe5"]
+[ext_resource type="Texture2D" uid="uid://b52cmpthoeur0" path="res://Assets/Point.png" id="6_uxpe5"]
+
+[sub_resource type="Animation" id="Animation_bf58t"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shop ui/Desk/Spud:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_6rmb7")]
+}
+
+[sub_resource type="Animation" id="Animation_nkmxo"]
+resource_name = "Spud_talk"
+length = 0.5
+step = 12.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shop ui/Desk/Spud:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_6rmb7"), ExtResource("3_jwdga"), ExtResource("2_6rmb7")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_er8uw"]
+_data = {
+&"RESET": SubResource("Animation_bf58t"),
+&"Spud_talk": SubResource("Animation_nkmxo")
+}
+
+[node name="Shop scene" type="Node2D"]
+script = ExtResource("1_5ycja")
+
+[node name="Shop ui" type="CanvasLayer" parent="."]
+
+[node name="Desk" type="TextureRect" parent="Shop ui"]
+z_index = 2
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.687
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -48.52
+offset_bottom = -7.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("1_njw01")
+expand_mode = 5
+
+[node name="Spud" type="TextureRect" parent="Shop ui/Desk"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.019
+anchor_top = 0.085
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0920005
+offset_top = -0.0699997
+offset_right = 17.0
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6rmb7")
+expand_mode = 5
+stretch_mode = 4
+
+[node name="New_counter" type="PanelContainer" parent="Shop ui"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.083
+offset_bottom = 0.319992
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Shop ui/New_counter"]
+layout_mode = 2
+
+[node name="Dollar" type="TextureRect" parent="Shop ui/New_counter/HBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("4_jwdga")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Shop ui/New_counter/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0.243137, 0.643137, 0.27451, 1)
+theme_override_colors/font_selected_color = Color(0.243387, 0.641238, 0.274796, 1)
+theme_override_font_sizes/normal_font_size = 32
+text = "Place holder"
+vertical_alignment = 1
+
+[node name="Shop pause menu" type="TextureButton" parent="Shop ui"]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 0.802
+anchor_right = 1.0
+anchor_bottom = 0.135
+offset_left = -0.0799866
+offset_top = 80.0
+offset_bottom = 49.4
+texture_normal = ExtResource("5_uxpe5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Shop button" type="Control" parent="Shop ui"]
+layout_mode = 3
+anchor_top = 0.453
+anchor_right = 0.122
+anchor_bottom = 0.543
+offset_left = 540.0
+offset_top = 525.12
+offset_right = 1015.12
+offset_bottom = 1398.72
+grow_vertical = 2
+rotation = 3.14159
+mouse_filter = 2
+
+[node name="Leave shop" type="TextureButton" parent="Shop ui/Shop button"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.868519
+anchor_top = 0.463021
+anchor_right = 0.998
+anchor_bottom = 0.536
+offset_left = 2.13147
+offset_top = -0.463013
+offset_right = 3.21344
+offset_bottom = 0.47699
+grow_vertical = 2
+texture_normal = ExtResource("6_uxpe5")
+ignore_texture_size = true
+stretch_mode = 0
+flip_v = true
+
+[node name="Label" type="Label" parent="Shop ui/Shop button"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.871
+anchor_top = 0.486
+anchor_right = 1.0
+anchor_bottom = 0.517
+offset_left = 68.789
+offset_top = 0.439941
+offset_right = 68.0
+offset_bottom = -15.36
+grow_vertical = 2
+rotation = 3.14159
+theme_override_font_sizes/font_size = 9
+text = "Go back"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Background" type="TextureRect" parent="Shop ui"]
+visibility_layer = 4
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_nkmxo")
+expand_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_er8uw")
+}
+
+[connection signal="pressed" from="Shop ui/Shop pause menu" to="." method="_on_shop_pause_menu_pressed"]
+[connection signal="pressed" from="Shop ui/Shop button/Leave shop" to="." method="_on_leave_shop_pressed"]

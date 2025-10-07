@@ -8,4 +8,4 @@ var CPS :int = 1
 var MainMenu :PackedScene = preload("res://Scenes/main_menu.tscn")
 var MainGame :PackedScene = preload("res://Scenes/Clicker.tscn")
 var Casheffect :PackedScene = preload("res://Scenes/Cash effect.tscn")
-#var MainMenu :PackedScene = preload("res://Scenes/main_menu.tscn")
+var Shop :PackedScene = preload("res://Scenes/shop_scene.tscn")
