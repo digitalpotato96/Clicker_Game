@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0knuymwg47rp"
-path="res://.godot/imported/plank.png-c07fcee00a29106ac47949627ae1bb4b.ctex"
+uid="uid://b52cmpthoeur0"
+path="res://.godot/imported/Point.png-836933e9b3ba6c8252b68aef6480644d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Shop/plank.png"
-dest_files=["res://.godot/imported/plank.png-c07fcee00a29106ac47949627ae1bb4b.ctex"]
+source_file="res://Legacy/Assets/Point.png"
+dest_files=["res://.godot/imported/Point.png-836933e9b3ba6c8252b68aef6480644d.ctex"]
 
 [params]
 

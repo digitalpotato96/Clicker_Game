@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfovc2jo6at3l"
-path="res://.godot/imported/setting placeholder.png-c5aebd306f66a5baffb6dbd4cb84c85f.ctex"
+uid="uid://b1mevotqu5lra"
+path="res://.godot/imported/Spud_desk.png-f49bbfade81428077bddbdcc8f72a650.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/setting placeholder.png"
-dest_files=["res://.godot/imported/setting placeholder.png-c5aebd306f66a5baffb6dbd4cb84c85f.ctex"]
+source_file="res://Legacy/Assets/Shop/Spud_desk.png"
+dest_files=["res://.godot/imported/Spud_desk.png-f49bbfade81428077bddbdcc8f72a650.ctex"]
 
 [params]
 

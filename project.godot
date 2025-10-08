@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Mobile game test"
 config/version="0.5"
-run/main_scene="uid://byykwmrxmygbn"
+run/main_scene="uid://bvcj6qe4ejd8k"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="uid://bdavqlkcl5wwk"
 
@@ -27,6 +27,15 @@ window/size/viewport_height=960
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 window/handheld/orientation=5
+
+[file_customization]
+
+folder_colors={
+"res://Legacy/": "gray",
+"res://Resourses/": "red",
+"res://Scenes/": "purple",
+"res://Scripts/": "green"
+}
 
 [input]
 

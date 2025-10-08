@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bflktua8ib720"]
 
-[ext_resource type="Texture2D" uid="uid://cfvbx5510oq1o" path="res://Assets/dollar.png" id="1_ls88j"]
+[ext_resource type="Texture2D" uid="uid://cfvbx5510oq1o" path="res://Sprites/dollar.png" id="1_ls88j"]
 [ext_resource type="Script" uid="uid://be3tuwljuq0xk" path="res://Scripts/cash_effect.gd" id="2_u0lqm"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_5k0v1"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwfpsi7ikwo8d"
-path="res://.godot/imported/Spud_Idle.png-2c2a9c4df5f878443dacab913ab31787.ctex"
+uid="uid://bdavqlkcl5wwk"
+path="res://.godot/imported/Apk icon.jpg-c6e4331938e3bb30172fbb4a71e9f6ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Shop/Spud_Idle.png"
-dest_files=["res://.godot/imported/Spud_Idle.png-2c2a9c4df5f878443dacab913ab31787.ctex"]
+source_file="res://Sprites/Extra/Apk icon.jpg"
+dest_files=["res://.godot/imported/Apk icon.jpg-c6e4331938e3bb30172fbb4a71e9f6ef.ctex"]
 
 [params]
 

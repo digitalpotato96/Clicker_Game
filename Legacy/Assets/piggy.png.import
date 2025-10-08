@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b52cmpthoeur0"
-path="res://.godot/imported/Point.png-d5529e72cd752baeffd7619bff274c0a.ctex"
+uid="uid://bblxwa3dj8uoc"
+path="res://.godot/imported/piggy.png-d4fe097f325939bdb959c3e69bc950b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Point.png"
-dest_files=["res://.godot/imported/Point.png-d5529e72cd752baeffd7619bff274c0a.ctex"]
+source_file="res://Legacy/Assets/piggy.png"
+dest_files=["res://.godot/imported/piggy.png-d4fe097f325939bdb959c3e69bc950b5.ctex"]
 
 [params]
 

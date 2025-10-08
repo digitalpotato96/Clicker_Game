@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://bwl5rqw6jhicr"]
 
-[ext_resource type="Script" uid="uid://pmofxmqdd121" path="res://Scripts/MainUI.gd" id="1_1b2bo"]
-[ext_resource type="Texture2D" uid="uid://bblxwa3dj8uoc" path="res://Assets/piggy.png" id="2_v2k75"]
-[ext_resource type="Texture2D" uid="uid://cfvbx5510oq1o" path="res://Assets/dollar.png" id="3_wk3fd"]
-[ext_resource type="Texture2D" uid="uid://cfovc2jo6at3l" path="res://Assets/setting placeholder.png" id="4_w0gnm"]
-[ext_resource type="Texture2D" uid="uid://b52cmpthoeur0" path="res://Assets/Point.png" id="5_v2k75"]
+[ext_resource type="Script" uid="uid://pmofxmqdd121" path="res://Legacy/Scripts/MainUI.gd" id="1_1b2bo"]
+[ext_resource type="Texture2D" uid="uid://bblxwa3dj8uoc" path="res://Legacy/Assets/piggy.png" id="2_v2k75"]
+[ext_resource type="Texture2D" uid="uid://cfvbx5510oq1o" path="res://Sprites/dollar.png" id="3_wk3fd"]
+[ext_resource type="Texture2D" uid="uid://cfovc2jo6at3l" path="res://Legacy/Assets/setting placeholder.png" id="4_w0gnm"]
+[ext_resource type="Texture2D" uid="uid://b52cmpthoeur0" path="res://Legacy/Assets/Point.png" id="5_v2k75"]
 
 [node name="Main ui" type="CanvasLayer"]
 script = ExtResource("1_1b2bo")

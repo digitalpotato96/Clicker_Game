@@ -1,14 +1,15 @@
-extends GPUParticles2D
+extends PanelContainer
 
+
+# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	amount = Globals.Cash_per_Second
-	emitting = true
-	await get_tree().create_timer(lifetime).timeout
-	queue_free()
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	rotation = randi_range(1,360)
+	pass
+
+func _input(event: InputEvent) -> void:
+	Globals
 	pass
