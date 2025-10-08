@@ -1,13 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bvcj6qe4ejd8k"]
+[gd_scene load_steps=5 format=3 uid="uid://bvcj6qe4ejd8k"]
 
 [ext_resource type="Texture2D" uid="uid://cfvbx5510oq1o" path="res://Sprites/dollar.png" id="1_a5hps"]
-[ext_resource type="Script" uid="uid://bn8si3ceu8npx" path="res://Scripts/Counter.gd" id="1_kqog5"]
-[ext_resource type="Script" uid="uid://billr0gixlytx" path="res://Scripts/Extra.gd" id="1_oss8w"]
+[ext_resource type="Script" uid="uid://bn8si3ceu8npx" path="res://Scenes/Counter.gd" id="1_kqog5"]
 [ext_resource type="Texture2D" uid="uid://bblxwa3dj8uoc" path="res://Legacy/Assets/piggy.png" id="3_sxhdm"]
-[ext_resource type="Script" uid="uid://2s8lhkynh6gp" path="res://Scripts/test_clicker.gd" id="4_oss8w"]
+[ext_resource type="Script" uid="uid://2s8lhkynh6gp" path="res://Scenes/test_clicker.gd" id="4_oss8w"]
 
 [node name="Main" type="Node"]
-script = ExtResource("1_oss8w")
 
 [node name="Counter" type="PanelContainer" parent="."]
 anchors_preset = -1
@@ -62,19 +60,5 @@ texture_normal = ExtResource("3_sxhdm")
 stretch_mode = 0
 script = ExtResource("4_oss8w")
 metadata/_edit_use_anchors_ = true
-
-[node name="BuildVersion" type="RichTextLabel" parent="."]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -31.0
-offset_right = 116.0
-grow_vertical = 0
-size_flags_horizontal = 3
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_colors/font_selected_color = Color(0.243387, 0.641238, 0.274796, 1)
-text = "Place holder"
-fit_content = true
-vertical_alignment = 2
 
 [connection signal="pressed" from="Added scene here/Clicker" to="Added scene here/Clicker" method="_on_pressed"]
