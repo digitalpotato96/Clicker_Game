@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfovc2jo6at3l"
-path="res://.godot/imported/setting placeholder.png-0e213071c865d7f0284b5458cb6c2131.ctex"
+uid="uid://bblxwa3dj8uoc"
+path="res://.godot/imported/piggy.png-e0814c65dcb360db4808f7a6f63be23c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Legacy/Assets/setting placeholder.png"
-dest_files=["res://.godot/imported/setting placeholder.png-0e213071c865d7f0284b5458cb6c2131.ctex"]
+source_file="res://Sprites/piggy.png"
+dest_files=["res://.godot/imported/piggy.png-e0814c65dcb360db4808f7a6f63be23c.ctex"]
 
 [params]
 

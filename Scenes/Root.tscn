@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://bvcj6qe4ejd8k"]
+[gd_scene load_steps=9 format=3 uid="uid://bvcj6qe4ejd8k"]
 
 [ext_resource type="Texture2D" uid="uid://cfvbx5510oq1o" path="res://Sprites/dollar.png" id="1_a5hps"]
 [ext_resource type="Script" uid="uid://bn8si3ceu8npx" path="res://Scripts/Counter.gd" id="1_kqog5"]
 [ext_resource type="Script" uid="uid://billr0gixlytx" path="res://Scripts/Extra.gd" id="1_oss8w"]
-[ext_resource type="Script" uid="uid://2s8lhkynh6gp" path="res://Scripts/test_clicker.gd" id="4_oss8w"]
-[ext_resource type="Texture2D" uid="uid://ximrseswof51" path="res://Sprites/Money button.png" id="4_pl8e4"]
+[ext_resource type="Script" uid="uid://ddak1c14lxvje" path="res://Scenes/Menus_Interactions.gd" id="4_b3i5h"]
+[ext_resource type="Texture2D" uid="uid://bgixaqm1a5kbu" path="res://Sprites/Custom placeholder.png" id="4_is6ib"]
+[ext_resource type="Texture2D" uid="uid://cfovc2jo6at3l" path="res://Sprites/setting placeholder.png" id="4_oss8w"]
+[ext_resource type="Texture2D" uid="uid://bblxwa3dj8uoc" path="res://Sprites/piggy.png" id="4_pl8e4"]
+[ext_resource type="PackedScene" uid="uid://dxaurdtg58xtt" path="res://main_clciker_scene.tscn" id="4_sxhdm"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_oss8w")
@@ -62,12 +65,47 @@ text = "Place holder"
 horizontal_alignment = 2
 vertical_alignment = 2
 
-[node name="BuildVersion" type="RichTextLabel" parent="."]
-anchors_preset = 2
-anchor_top = 1.0
+[node name="Menu-Buttons" type="PanelContainer" parent="."]
+anchors_preset = -1
+anchor_top = 0.946
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -31.0
+offset_top = -52.16
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("4_b3i5h")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu-Buttons"]
+layout_mode = 2
+
+[node name="Custom" type="TextureButton" parent="Menu-Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_is6ib")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Shop" type="TextureButton" parent="Menu-Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_pl8e4")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Settings" type="TextureButton" parent="Menu-Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_oss8w")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="BuildVersion" type="RichTextLabel" parent="."]
+anchors_preset = -1
+anchor_top = 0.874
+anchor_bottom = 0.891
+offset_top = -15.04
 offset_right = 116.0
+offset_bottom = -0.360046
 grow_vertical = 0
 size_flags_horizontal = 3
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -78,19 +116,8 @@ vertical_alignment = 2
 
 [node name="Added scene here" type="Node" parent="."]
 
-[node name="Clicker" type="TextureButton" parent="Added scene here"]
-anchors_preset = -1
-anchor_left = 0.401852
-anchor_top = 0.448958
-anchor_right = 0.601481
-anchor_bottom = 0.56125
-offset_right = 872.2
-offset_bottom = 872.2
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.11, 0.11)
-texture_normal = ExtResource("4_pl8e4")
-stretch_mode = 0
-script = ExtResource("4_oss8w")
+[node name="Main-Clciker-Scene" parent="Added scene here" instance=ExtResource("4_sxhdm")]
 
-[connection signal="pressed" from="Added scene here/Clicker" to="Added scene here/Clicker" method="_on_pressed"]
+[connection signal="toggled" from="Menu-Buttons/HBoxContainer/Custom" to="Menu-Buttons" method="_on_custom_toggled"]
+[connection signal="pressed" from="Menu-Buttons/HBoxContainer/Shop" to="Menu-Buttons" method="_on_shop_pressed"]
+[connection signal="pressed" from="Menu-Buttons/HBoxContainer/Settings" to="Menu-Buttons" method="_on_settings_pressed"]
