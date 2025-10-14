@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c68k5wxc7dxc2" path="res://Legacy/Assets/Shop/Spud_talk.png" id="3_jwdga"]
 [ext_resource type="Texture2D" uid="uid://cfvbx5510oq1o" path="res://Sprites/dollar.png" id="4_jwdga"]
 [ext_resource type="Texture2D" uid="uid://d0knuymwg47rp" path="res://Legacy/Assets/Shop/plank.png" id="4_nkmxo"]
-[ext_resource type="Texture2D" uid="uid://cfovc2jo6at3l" path="res://Sprites/setting placeholder.png" id="5_uxpe5"]
+[ext_resource type="Texture2D" uid="uid://cfovc2jo6at3l" path="res://Sprites/Placeholder images/setting placeholder.png" id="5_uxpe5"]
 [ext_resource type="Texture2D" uid="uid://b52cmpthoeur0" path="res://Legacy/Assets/Point.png" id="6_uxpe5"]
 
 [sub_resource type="Animation" id="Animation_bf58t"]

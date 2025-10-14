@@ -31,10 +31,13 @@ window/handheld/orientation=5
 [file_customization]
 
 folder_colors={
+"res://Audio/": "teal",
 "res://Legacy/": "gray",
 "res://Resourses/": "red",
 "res://Scenes/": "purple",
-"res://Scripts/": "green"
+"res://Scripts/": "green",
+"res://Sprites/": "pink",
+"res://Sprites/Spud/": "orange"
 }
 
 [input]
