@@ -2,7 +2,7 @@ extends GPUParticles2D
 
 func _ready() -> void:
 	# multiplies the effect byt th total cash per second amount
-	amount = Globals.Clicks_per_Second
+	amount = Globals.Cash_per_Click
 	emitting = true
 	rotation = 90
 	position.x = randi_range(130,580)

@@ -5,7 +5,7 @@ extends PanelContainer
 func _ready() -> void:
 	$"HBoxContainer/Money Output".text = str(Globals.cash)
 	$HBoxContainer/VBoxContainer/CPS.text = str(Globals.Cash_per_Second)
-	$HBoxContainer/VBoxContainer/Clicks.text = str(Globals.Clicks_per_Second)
+	$HBoxContainer/VBoxContainer/Clicks.text = str(Globals.Cash_per_Click)
 	pass # Replace with function body.
 
 
@@ -13,5 +13,5 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	$"HBoxContainer/Money Output".text = "$" + str(Globals.cash)
 	$"HBoxContainer/VBoxContainer/CPS".text = "Cash per second:" + str(Globals.Cash_per_Second)
-	$HBoxContainer/VBoxContainer/Clicks.text = "Clicks per second:" + str(Globals.Clicks_per_Second)
+	$HBoxContainer/VBoxContainer/Clicks.text = "Cash per click:" + str(Globals.Cash_per_Click)
 	pass
