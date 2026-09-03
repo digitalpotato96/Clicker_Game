@@ -17,7 +17,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="Mobile game test"
 config/version="0.5"
 run/main_scene="uid://bvcj6qe4ejd8k"
-config/features=PackedStringArray("4.6", "Mobile")
+config/features=PackedStringArray("4.7", "Mobile")
 config/icon="uid://bdavqlkcl5wwk"
 
 [autoload]

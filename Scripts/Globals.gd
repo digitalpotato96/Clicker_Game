@@ -1,7 +1,7 @@
 extends Node
 
 var cash :int = 0
-var Cash_per_Click :int = 10
+var Cash_per_Click :int = 1
 var Cash_per_Second :int = 0
 
 #scenes
