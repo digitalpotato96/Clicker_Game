@@ -27,5 +27,5 @@ func _on_settings_button_pressed() -> void:
 
 
 func _on_return_pressed() -> void:
-	$"../Settings".hidden
+	$"../Settings".visible = false
 	pass # Replace with function body.
